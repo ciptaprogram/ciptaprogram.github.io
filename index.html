@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Ciptaprogram</title>
 
@@ -29,21 +33,21 @@
     <section class="about" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12"  data-aos="fade-down" data-aos-offset="300">
             <h2 class="text-center">About</h2>
             <hr style="width:250px;border-top: 3px solid #999;">
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-4 col-sm-offset-2">
+          <div class="col-sm-4 col-sm-offset-2" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
             <p>
               Kami adalah pembuat piranti lunak (software house) yang sudah banyak
 membuat software untuk bermacam-macam kebutuhan perusahaan-perusahaan
 yang berbeda-beda.
             </p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4"  data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500">
             <p>
               Sehingga kami menawarkan jasa pembuatan program komputer untuk membantu
 segala macam kebutuhan usaha anda.
@@ -52,9 +56,8 @@ segala macam kebutuhan usaha anda.
         </div>
 
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-sm-8 col-sm-offset-2"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
             <br>
-            <p>
               Keuntungan dengan menggunakan program komputer yang kami buat: <br>
               - mendapatkan bermacam-macam laporan yang diperlukan dan dapat disimpan ke dalam format
               PDF, HTML, Ms. Excel, Ms. Word, RTF & Text <br>
@@ -66,6 +69,8 @@ segala macam kebutuhan usaha anda.
               jembatan timbang), printer barcode, scanner barcode, fingerprint,
               mesin absensi, dll. <br>
               <br><br>
+          </div>
+          <div class="col-sm-8 col-sm-offset-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
               Kami menyediakan program standar toko yang sudah jadi, berupa program STOK 1.7.5 dengan fasilitas sebagai berikut : <br>
               - pembelian, penjualan, surat jalan, retur barang ke supplier dan retur barang dari customer <br>
               - tambah & edit supplier & customer <br>
@@ -82,6 +87,8 @@ segala macam kebutuhan usaha anda.
               - program dikirim berupa cd, sehingga bisa diinstall di banyak komputer <br>
                 (tanpa batasan jumlah komputer yang diinstall) <br>
               <br><br>
+          </div>
+          <div class="col-sm-8 col-sm-offset-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
               Selain itu, kami juga membuat berbagai macam program pesanan (Custom Software) dengan referensi sebagai berikut: <br>
               - Perusahaan perakitan sepeda motor <br>
               - Cafe <br>
@@ -165,7 +172,6 @@ segala macam kebutuhan usaha anda.
               - Recovery database MySQL dari kerusakan karena virus <br>
               - Program untuk memantau kerja karyawan (melalui history komputer) <br>
               <br><br>              
-            </p>
           </div>
         </div>
 
@@ -173,7 +179,7 @@ segala macam kebutuhan usaha anda.
     </section>
 
     <section class="contact" id="contact" style="background-color: #eee;">
-      <div class="container">
+      <div class="container" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="row">
           <div class="col-sm-12">
             <h2 class="text-center">Contact</h2>
@@ -192,6 +198,11 @@ segala macam kebutuhan usaha anda.
           </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
