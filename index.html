@@ -26,8 +26,8 @@
     <div class="jumbotron text-center">
         <!-- <img src="image/ciptaprogram.jpg" class="img-circle"> -->
         <img src="image/ciptaprogram.jpg">
-        <h1>Ciptaprogram</h1>
-        <p>Software Developer</p>
+        <h1 class="display-4">Ciptaprogram</h1>
+        <p class="lead">Software Developer</p>
     </div>
 
     <section class="about" id="about">
@@ -204,6 +204,16 @@ segala macam kebutuhan usaha anda.
       AOS.init();
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"></script>
+    <script>
+      //gsap.registerPlugin(TextPlugin);
+      //gsap.to(".jumbotron p", {duration:1, delay:1, text:'Software Developer'});
+      gsap.from(".jumbotron img", {duration: 2, y: 100, opacity:0});
+      gsap.from(".display-4", {duration:1.5, x:-50, opacity:0, delay:1, ease:'back'});
+      gsap.from(".lead", {duration:1.5, x:50, opacity:0, delay:1, ease:'back'});
+    </script>
+      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
